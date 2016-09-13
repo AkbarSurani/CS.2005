@@ -7,6 +7,6 @@ object Q3{
 	}
 	def main(args: Array[String]): Unit= 
 	{
-		println("Inserting 19 in (2, 6, 12, 24, 30, 45): ", sortInsert(List(2, 6, 12, 24, 30, 45),55))
+		println("Inserting 19 in (2, 6, 12, 24, 30, 45): ", sortInsert(List(2, 6, 12, 24, 30, 45),19))
 	}
 }
