@@ -1,0 +1,28 @@
+object Q2{
+
+	def splitList(inputlist:List[Int]):(List[Int],List[Int])={
+		
+		var list1: List[Int] = List()
+		var list2: List[Int] = List()
+		var list: List[Int] = inputlist
+
+		while (list!=Nil){
+			list1=list1:+(list.head)
+			list = list.tail
+
+		if(!(list.isEmpty)){
+			list2=list.last::list2
+			list=list.init
+		}
+
+		}
+
+		(list1,list2)
+
+	}
+
+	def main(args: Array[String]):Unit={
+		println(splitList(List(2,7,3,5,8,1)))
+	}
+
+	}
